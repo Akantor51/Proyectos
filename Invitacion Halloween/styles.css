@@ -1,0 +1,46 @@
+* {
+    margin: 0%;
+}
+div#invitacion {
+    display: flex;
+    width: 500px;
+    border: solid #000000 1px;
+    background-color: #F0EDE2;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 1%;
+    margin-top: 20px;
+}
+
+h1 {
+    color: orange;
+    background-color: black;
+    font-family: 'Creepster', cursive;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'creepster', cursive;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 5px;
+}
+
+p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: auto;
+}
