@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+}  
+  #navbar-pinterest {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  .finder {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffffff;
+    border: solid #ff0000;
+    border-radius: 4px;
+
+  }
+  #content {
+    padding-top: 80px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 2fr));
+    gap: 2;
+  }
+  .card-image {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .card-image:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+    filter: opacity(0.8);
+  }
+  #pinterest-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(130, 91, 91);
+    border-radius: 50%;
+    margin-left: 10px;
+  }
