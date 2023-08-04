@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero Automático</title>
+</head>
+<body>
+  <div id="inicio">
+      <h1>¡Buen día!</h1>
+      <h2>Selecciona una cuenta:</h2>
+      <select id="cuentas">
+          <option value="0">Mali</option>
+          <option value="1">Gera</option>
+          <option value="2">Maui</option>
+      </select>
+      <br><br>
+      <input type="password" placeholder="Ingresa tu contraseña" id="password">
+      <button onclick="login()">Ingresar</button>
+  </div>
+
+  <div id="interaccion" style="display: none;">
+      <h2 id="bienvenido">¡Bienvenido!</h2>
+      <p id="saldo"></p>
+      <div id="acciones" style="display: none;">
+        <button id="consultar" onclick="consultarSaldo()">Consultar saldo</button>
+        <button id="ingresar" onclick="ingresarMonto()">Ingresar monto</button>
+        <button id="retirar" onclick="retirarMonto()">Retirar monto</button>
+        <button id="cerrarSesion" onclick="cerrarSesion()">Cerrar sesión</button>
+      </div>
+      <div id="cambiarContrasenaSection" style="display: none;">
+        <input type="password" placeholder="Nueva contraseña" id="nuevaContrasena">
+        <button onclick="cambiarContrasena()">Aceptar</button>
+        <button onclick="cancelarCambioContrasena()">Cancelar</button>
+      </div>
+      <br><br>
+      <div id="montoSection" style="display: none;">
+          <input type="number" placeholder="Ingresa monto" id="monto">
+          <button onclick="realizarOperacion()" id="realizar">Aceptar</button>
+          <button onclick="cancelarOperacion()" id="cancelar">Cancelar</button>
+      </div>
+      <button onclick="cerrarSesion()" id="cerrarSesion" style="display: none;">Cerrar sesión</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
